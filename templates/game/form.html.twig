@@ -1,22 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello GameController!{% endblock %}
+{% block title %}
+    Log - {{ parent() }}
+{% endblock %}
 
 {% block body %}
 
-<style>
-    .title-container {
-        width: 70vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    h1 {
-        width: 100%;
-        font-size: 3rem;
-    }
-</style>
 
 <div class="title-container">
     <h1>Formulaire de jeu</h1>

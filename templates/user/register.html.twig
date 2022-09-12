@@ -1,6 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello UserController!{% endblock %}
+
+{% block title %}
+    Inscription - {{ parent() }}
+{% endblock %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/register.css')}}">
+{% endblock %}
+
 
 {% block body %}
 
@@ -18,8 +27,9 @@
         <label for="Email">Email</label><br>
         <input type="Email" name="Email" id="Email" placeholder="Email"><br>
 
-        <label for="tel">Téléphone</label><br>
-        <input type="tel" name="tel" id="tel" placeholder="Numéro de télphone"><br>
+        {# <label for="tel">Téléphone</label><br> #}
+        {# <input type="tel" name="tel" id="tel" placeholder="Numéro de télphone"><br> #}
+        <button class="submit-button" type="submit">Je m'inscris !</button>
     </form>
 </div>
 

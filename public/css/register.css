@@ -1,0 +1,17 @@
+.submit-button {
+    padding: 20px;
+    margin: 30px auto;
+    min-width: 10vw;
+    border: ridge 10px transparent;
+    border-radius: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Henny Penny', cursive;
+
+}
+
+.submit-button:hover {
+    border: ridge 10px goldenrod;
+    background-color: bisque;
+}
