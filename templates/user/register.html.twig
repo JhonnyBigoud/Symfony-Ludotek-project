@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+
+<h1>Inscription</h1>
+
+
+<div class="form-container">
+    <form action="">
+        <label for="username">Pseudo</label><br>
+        <input type="text" name="username" id="username" placeholder="Pseudo"><br>
+
+        <label for="password">Mot de passe</label><br>
+        <input type="password" name="password" id="password" placeholder="Mot de passe"><br>
+
+        <label for="Email">Email</label><br>
+        <input type="Email" name="Email" id="Email" placeholder="Email"><br>
+
+        <label for="tel">Téléphone</label><br>
+        <input type="tel" name="tel" id="tel" placeholder="Numéro de télphone"><br>
+    </form>
+</div>
+
+{% endblock %}
