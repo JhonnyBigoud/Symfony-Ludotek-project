@@ -59,7 +59,7 @@ header {
 
 .nav-container a{
     text-decoration: none;
-    color: goldenrod;
+    color: grey;
     font-size: 1.8rem;
     font-family: 'Rubik Distressed', cursive;
     padding: 20px;
@@ -68,7 +68,7 @@ header {
 }
 
 .nav-container a:hover {
-    color: grey;
+    color: goldenrod;
     border: 2px solid goldenrod;
     background-color: black;
 }
