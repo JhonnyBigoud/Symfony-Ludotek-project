@@ -109,15 +109,15 @@ h1 {
     color: goldenrod;
     padding: 70px;
     padding-top: 80px;
-    border: solid 5px goldenrod;
+    border: ridge 15px goldenrod;
     border-radius: 25% 25% 15% 15%;
-    background-color: rgba(0, 0, 0, 0.849);
+    background-color: rgb(0, 0, 3);
     /* font-family: 'Rubik Distressed', cursive; */
     font-family: 'Henny Penny', cursive;
     background-image: url('../images/bg-galaxy.jpg');
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     box-shadow: 0px 0px 100px 10px wheat;
     -webkit-text-stroke: paleturquoise 3px;
     -webkit-text-stroke: #111b33 2px;
@@ -240,7 +240,7 @@ label {
 }
 
 .nav-toggler.active .l1 {
-    transform: translateY(0px) rotate(135deg);
+    transform: translateY(0px) rotate(315deg);
 }
 
 .nav-toggler.active .l2 {
@@ -248,7 +248,7 @@ label {
 }
 
 .nav-toggler.active .l3 {
-    transform: translateY(0px) rotate(-135deg);
+    transform: translateY(0px) rotate(-325deg);
 }
 
 .nav-toggler {
