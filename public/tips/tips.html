@@ -27,9 +27,12 @@ php bin/console devbug:router
 {# Création de controller #}
 php bin/console make:controller
 
+{# Lancement du serveur sur le port 8080 #}
 php -S localhost:8080
 php -S localhost:8080 -t public
-{# Lancement du serveur sur le port 8080 #}
+
+{# Création BDD #}
+php bin/console doctrine:database:create
 
 {# Liens utiles  #}
 https://symfony.com/doc/current/setup.html#creating-symfony-applications
@@ -43,3 +46,12 @@ https://coolors.co/palettes/trending
 https://www.iconfinder.com/
 
 https://app.dbdesigner.net/
+
+
+{# Migration  #}
+
+{# Initier la migration #}
+php bin/console make:migration
+
+{# Effectuer la migration #}
+php bin/console doctrine:migrations:migrate
