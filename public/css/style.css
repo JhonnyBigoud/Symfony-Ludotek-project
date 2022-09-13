@@ -2,6 +2,13 @@
     /* font-family: 'Henny Penny', cursive; */
     /* font-family: 'Rubik Distressed', cursive; */
 
+:root {
+    --primary:#aaa;
+    --secondary:#aaa;
+    --light:#aaa;
+    --danger:#aaa;
+    --success:#aaa;
+}
 *, html, body {
     box-sizing: border-box;
     margin: 0;
@@ -170,6 +177,13 @@ footer {
 footer p {
     padding-bottom: 20px ;
 }
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 input {
     min-width: 60vw;
     border: ridge 10px gray;
@@ -177,6 +191,18 @@ input {
     margin: 40px 70px;
     border-radius: 5px;
     font-size: 1.5rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 99%;
+}
+.links-container a {
+    text-decoration: none;
+    color: #daa520;
+    margin: 20px auto;
 }
 
 label {
@@ -265,7 +291,7 @@ span {
 {
     h1 {
         width: 70%;
-        font-size: 12vw;
+        font-size: 60px;
     }    
 }
 

@@ -20,66 +20,21 @@
 
     </head>
     <body>
-     
-        <header>
-            <button class="nav-toggler" aria-label="toggle curtain navigation"> 
-                    <span class="linespan l1"></span>
-                    <span class="linespan l2"></span>
-                    <span class="linespan l3"></span>
-            </button>
-            <div class="header">
-                
-                <div class="logo-container">
-                    <img src="{{ asset('images/logo.svg')}}" alt="" width="200px" height="200px">
-                    <p>
-                        LUDOTEK
-                    </p>
-                </div>
-                
-                <div class="nav-container">
-                    <nav>
-                        <li>
-                            <a href="{{ path('main_index') }}">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('game_create') }}">Ajouter un jeu</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('user_login') }}">Connexion</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('user_register') }}">Inscription</a>
-                        </li>
-                    </nav>
-                </div>
-
-            </div>
-                
-            <div class="title-container">
-                <h2>
-                    Découvrez la plus 
-                    <span class="cool1"> cool </span>
-                     des librairies de jeux de société 
-                    <span class="cool2"> !!! </span>
-
-                </h2>
-            </div>
-           
-
-        </header>
-
-        {% block body %}
-
-        {% endblock %}
+            {# Header #}
+        {# -------------------------------------------------------------------------------- #}
+        {% include "components/header.html.twig" %}
         
-        <footer>
-                <p class="alcool">
-                    #Lalcoolcestpas-cool
-                </p>
-                <p>
-                    Copyrights © - Terms of Service.Inc
-                </p>
-        </footer>
+            {# Main #}
+        {# -------------------------------------------------------------------------------- #}
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+            {# Footer #}
+        {# -------------------------------------------------------------------------------- #}
+        {% include "components/footer.html.twig" %}
+        
+
         <script src="{{ asset('js/app.js')}}"></script>
 
     </body>
