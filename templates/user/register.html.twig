@@ -29,7 +29,15 @@
 
         {# <label for="tel">Téléphone</label><br> #}
         {# <input type="tel" name="tel" id="tel" placeholder="Numéro de télphone"><br> #}
-        <button class="submit-button" type="submit">Je m'inscris !</button>
+        {# <button class="submit-button" type="submit">Je m'inscris !</button> #}
+        <button class="btn-marquee">
+            <span class="base-txt" type="submit">Je m'inscris !</span>
+                <div class="marquee" aria-hidden="true">
+                    <span>Je m'inscris !</span>
+                    <span>Je m'inscris !</span>
+                    <span>Je m'inscris !</span>
+                </div>
+        </button>
     </form>
 </div>
 
