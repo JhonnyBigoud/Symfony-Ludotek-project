@@ -47,11 +47,19 @@ https://www.iconfinder.com/
 
 https://app.dbdesigner.net/
 
+{# Entités #}
 
-{# Migration  #}
+{# Création entités #}
+php bin/console make:entity
+
+{# Migration(s)  #}
 
 {# Initier la migration #}
 php bin/console make:migration
 
 {# Effectuer la migration #}
 php bin/console doctrine:migrations:migrate
+
+{# Effectuer une migration unique #}
+php bin/console doctrine:migrations:execute "DoctrineMigration\\Version202020202020" --down
+{# On rajoute down si on veut effectuer la migration dans le sens inverse, "la chaîne prise en base" #}

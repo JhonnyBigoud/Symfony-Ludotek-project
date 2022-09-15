@@ -1,25 +1,27 @@
 <header>
-    <a href="{{path('main_index')}}">
+    {# <a href="{{path('main_index')}}">
         Logo + LUDOTEK
-    </a>
+    </a> #}
     <button class="nav-toggler" aria-label="toggle curtain navigation"> 
             <span class="linespan l1"></span>
             <span class="linespan l2"></span>
             <span class="linespan l3"></span>
     </button>
     <div class="header">
-
-        <div class="logo-container">
-            <img src="{{ asset('images/logo.svg')}}" alt="" width="200px" height="200px">
-            <p>
-                LUDOTEK
-            </p>
-        </div>
-        
+        <a href="{{ path('main_index') }}">
+            <div class="logo-container">
+                <img src="{{ asset('images/logo.svg')}}" alt="" width="200px" height="200px">
+        </a>
+                <p>
+        <a href="{{ path('main_index') }}">
+                    LUDOTEK
+        </a>
+                </p>
+            </div>
         <div class="nav-container">
             <nav>
                 <li>
-                    <a href="{{ path('main_index') }}">Catalogue</a>
+                    <a href="{{ path('game_list') }}">Catalogue</a>
                 </li>
                 <li>
                     <a href="{{ path('game_create') }}">Ajouter un jeu</a>

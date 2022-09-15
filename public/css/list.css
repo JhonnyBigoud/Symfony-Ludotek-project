@@ -1,0 +1,67 @@
+.game {
+    background-color: rgba(174, 116, 27, 0.84);
+    
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.game .game-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    border: ridge 6px black;
+}
+
+.game .game-picture img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.game .game-category {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: bisque;
+    color: chocolate;
+}
+
+.game .game-detail {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: ridge 6px black;
+    font-family: 'Abril Fatface', cursive;
+    align-self: flex-start;
+
+}
+
+.game .game-detail h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.game .game-detail p {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.game .game-detail a {
+    align-self: flex-end;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+}

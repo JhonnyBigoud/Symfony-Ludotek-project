@@ -2,28 +2,26 @@
 
 namespace App\Repository;
 
-use App\Entity\Game;
+use App\Entity\GameDesigner;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Game>
+ * @extends ServiceEntityRepository<GameDesigner>
  *
- * @method Game|null find($id, $lockMode = null, $lockVersion = null)
- * @method Game|null findOneBy(array $criteria, array $orderBy = null)
- * @method Game[]    findAll()
- * @method Game[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
- */ 
-// $limit = nbre de résultats max 
-// $offset = départ du tableau où l'on veut commencer
-class GameRepository extends ServiceEntityRepository
+ * @method GameDesigner|null find($id, $lockMode = null, $lockVersion = null)
+ * @method GameDesigner|null findOneBy(array $criteria, array $orderBy = null)
+ * @method GameDesigner[]    findAll()
+ * @method GameDesigner[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ */
+class GameDesignerRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Game::class);
+        parent::__construct($registry, GameDesigner::class);
     }
 
-    public function add(Game $entity, bool $flush = false): void
+    public function add(GameDesigner $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -32,7 +30,7 @@ class GameRepository extends ServiceEntityRepository
         }
     }
 
-    public function remove(Game $entity, bool $flush = false): void
+    public function remove(GameDesigner $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
 
@@ -42,7 +40,7 @@ class GameRepository extends ServiceEntityRepository
     }
 
 //    /**
-//     * @return Game[] Returns an array of Game objects
+//     * @return GameDesigner[] Returns an array of GameDesigner objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -56,7 +54,7 @@ class GameRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Game
+//    public function findOneBySomeField($value): ?GameDesigner
 //    {
 //        return $this->createQueryBuilder('g')
 //            ->andWhere('g.exampleField = :val')

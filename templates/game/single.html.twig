@@ -1,12 +1,54 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-Fiche de jeu - {{ parent() }}
+{{ game.name }} - {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/single.css') }}">
 {% endblock %}
 
 {% block body %}
+<h1>{{ game.name }}</h1>
+<div class="single-card">
+<img src="{{ asset('images/game/' ~ game.picture) }}" alt="">
+<div class="detail-container">
+<p> {{ game.description|nl2br }}</p>
+{# Fonction pour organiser le texte nl2br #}
+<div class="game-detail">
+<span>Catégorie : {{ game.category.name }}</span>
+<br>
+<span>Age conseillé :{{ game.minimumAge}}</span>
+<br>
+<span>
+    Nombre de joueur(s) : {{ game.minimumPlayer }}
+    {% if game.maximumPlayer %}
+        - {{ game.maximumPlayer}}
+    {% endif %}
+</span>
+<br>
 
-
-<h1>Fiche de jeu</h1>
-
+<span>
+    Durée d'une partie : {{ game.duration|date('H:i') }}
+</span>
+<br>
+<span>
+    Date de sortie : {{ game.releaseAt|date('d/m/Y') }}
+</span>
+<br>
+<span>
+    {% for editor in game.editors %}
+        Editeur : {{ editor.name }}
+    {% endfor %}
+</span>
+<br>
+<span>
+ Designers :
+    {% for gameDesigner in game.designers %}
+        {{ gameDesigner.designer.name }} <br>
+    {% endfor %}
+</div>
+</div>
+</span>
+</div>
 {% endblock %}

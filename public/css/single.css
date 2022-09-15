@@ -1,0 +1,30 @@
+.single-card {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    border: ridge 8px goldenrod;
+}
+
+img {
+    max-height :300px;
+    margin: 15px;
+}
+
+.detail-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.game-detail {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    margin: 10px auto;
+}

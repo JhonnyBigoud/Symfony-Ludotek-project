@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Henny+Penny&family=Ms+Madi&family=Nabla&family=Rubik+Distressed&display=swap');
     /* font-family: 'Henny Penny', cursive; */
     /* font-family: 'Rubik Distressed', cursive; */
-
+    /* font-family: 'Nabla', cursive; */
+    /* font-family: 'Ms Madi', cursive; */
+    /* font-family: 'Abril Fatface', cursive; */
 :root {
     --primary:#aaa;
     --secondary:#aaa;
@@ -94,7 +96,7 @@ header {
 }
 
 .logo-container p {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 20px 80px;
     padding: 10px 20px;
     border: solid 1px goldenrod;
@@ -102,31 +104,43 @@ header {
     background-color: rgba(0, 0, 0, 0.541);
 }
 
+.logo-container a {
+    text-decoration: none;
+    color: goldenrod;
+
+}
+
+main {
+    width: 100%;
+}
+
 h1 {
     font-size: 10rem;
     font-weight: bold;
-    margin: 50px auto;
+    margin: 80px auto;
     color: goldenrod;
     padding: 70px;
-    padding-top: 80px;
     border: ridge 15px goldenrod;
-    border-radius: 25% 25% 15% 15%;
+    border-radius: 35% 35% 25% 25%;
     background-color: rgb(0, 0, 3);
-    /* font-family: 'Rubik Distressed', cursive; */
     font-family: 'Henny Penny', cursive;
     background-image: url('../images/bg-galaxy.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     box-shadow: 0px 0px 100px 10px wheat;
-    -webkit-text-stroke: paleturquoise 3px;
     -webkit-text-stroke: #111b33 2px;
+    max-width: 60%;
+}
+
+.title-container {
+    margin: 15px;
 }
 
 h2 {
     /* background-color: rgba(160, 63, 33, 0.582); */
     background-color: rgba(14, 26, 19, 0.96);
-    border: 16px ridge goldenrod;
+    border: 8px ridge goldenrod;
     border-radius: 10px;
     color: gold;
     display: flex;
@@ -136,15 +150,17 @@ h2 {
     text-align: center;
     padding: 25px;
     margin: 60px auto;
+    font-family: 'Nabla', cursive;
+
 }
 
 .cool1, .cool2 {
     padding: 5px;
-    font-family: 'Rubik Distressed', cursive;
+    /* font-family: 'Rubik Distressed', cursive; */
     margin: auto 30px;
-    font-size: 15rem;
-    text-decoration: line-through   rgb(138, 26, 26) 18px;
-    -webkit-text-stroke: 1px brown;
+    font-size: 10rem;
+    text-decoration: line-through rgb(249, 208, 87) 18px;
+    /* -webkit-text-stroke: 1px brown; */
 }
 
 .cool2 {
@@ -156,7 +172,7 @@ h2 {
     padding: 5px;
     font-family: 'Rubik Distressed', cursive;
     margin: auto 30px;
-    font-size: 10rem;
+    font-size: 6rem;
     -webkit-text-stroke: 1px brown;
 }
 
@@ -170,6 +186,7 @@ footer {
     min-height: 20vh;
     background-color: rgba(0, 0, 0, 0.623);
     border: 8px ridge goldenrod;
+    border-radius: 10px;
     font-size: 2rem;
     margin-top: 80px;
 }
@@ -203,6 +220,7 @@ input {
     text-decoration: none;
     color: #daa520;
     margin: 20px auto;
+    padding: 20px;
 }
 
 label {
@@ -287,6 +305,17 @@ span {
     transform: translateX(0);
 }
 
+.button {
+    padding: 20px 15px;
+    background-color: #815f08;
+    max-width: 200px;
+    border-radius: 3px;
+    border: ridge 6px goldenrod;
+}
+
+a {
+    text-decoration: none;
+}
 @media screen and (max-width:984px)
 {
     h1 {
